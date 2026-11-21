@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    text-align: center;
+}
+h1 {
+    color: #00e5ff;
+    text-transform: uppercase;
+}
+.contenedor {
+    max-width: 950px;
+    margin: auto;
+}
+.numeros, .geogebra {
+    background: white;
+    color: #222;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.valores {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.valores h2 {
+    background: #e8f7ff;
+    color: #007c99;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+button {
+    background: #00bcd4;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 8px;
+}
+button:hover {
+    background: #008fa1;
+}
+.resultado {
+    background: #16283b;
+    border: 2px solid #00e5ff;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 20px 0;
+}
+.resultado h2 {
+    color: #00e5ff;
+}
+.cajas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+.caja {
+    background: white;
+    color: #222;
+    padding: 20px;
+    border-radius: 12px;
+    border-top: 6px solid;
+    text-align: left;
+    opacity: 0.4;
+    transition: 0.3s;
+}
+.caja h2 {
+    text-align: center;
+}
+.caja ul {
+    line-height: 1.8;
+}
+.caja.activa {
+    opacity: 1;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px #00e5ff55;
+}
+.lineal {
+    border-color: #2196f3;
+}
+.afin {
+    border-color: #9c27b0;
+}
+.constante {
+    border-color: #ff9800;
+}
+.no-funcion {
+    border-color: #f44336;
+}
+.geogebra h2 {
+    color: #007c99;
+}
+a {
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    .cajas {
+        grid-template-columns: 1fr;
+    }
+}
+.geogebra {
+    background: white;
+    color: #222;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 25px;
+}
+.geogebra h2 {
+    color: #007c99;
+}
+.geogebra hr {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+.geogebra input {
+    margin: 15px;
+    padding: 10px;
+    max-width: 100%;
+}
